@@ -1,3 +1,17 @@
+Please follow the following instructions:
+
+1) Create a new angular project (using angular cli) "ng new " (node.js must be installed)
+2) Replace the "src" folder of you new angular project with the folder "src" under "BookStoreClient"
+3) Open the cmd in the location of you new angular project
+4) run the command "ng serve"
+
+Open the application: Open a web browser of your choice and open the url "localhost:4200"
+
+ENJOY :)
+
+
+
+
 # StockMarket
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
