@@ -1,0 +1,21 @@
+.imageClass{
+    height: 20px;
+    width: 20px;
+}
+
+.priceClass{
+    display: inline-block;
+    min-width: 75px;
+}
+
+.tableHeader{
+    border-bottom: 3px solid gray;
+}
+
+.greenText{
+    color: rgb(3, 185, 3);
+}
+
+.redText{
+    color: red;
+}

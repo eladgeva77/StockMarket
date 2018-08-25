@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Stock Portfolio</h1>
+    <input type="text" class="form-control" [(ngModel)]='filterTerm' placeholder="Filter By Stock ID(use ',' as separator)">
+    <table class="table table-striped">
+      <thead class="tableHeader">
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Value</th>
+      </thead>
+      <tbody>
+        <tr *ngFor='let stock of myStocks | stockFilter:filterTerm'>
+          <td>{{stock.id}}</td>
+          <td>{{stock.name}}</td>
+          <td [ngClass]="{'greenText': stock.status==='up', 'redText': stock.status==='down'}">
+            <span class="priceClass">{{stock.price}}</span>
+            <img class='imageClass' [src]='fetchImage(stock)'>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
